@@ -32,19 +32,19 @@ export default function DashboardPage() {
               </TabsList>
               
               <TabsContent value="7" className="space-y-4">
-                {/* Summary numbers for 7 days */}
-                <div className="grid grid-cols-3 gap-4 p-3 bg-gray-50 rounded">
+                            {/* Summary numbers for 7 days */}
+            <div className="grid grid-cols-3 gap-4 p-3 bg-muted rounded">
                   <div className="text-center">
                     <div className="text-lg font-bold text-green-600">₪ 1.47M</div>
-                    <div className="text-xs text-gray-600">סך הכנסות</div>
+                    <div className="text-xs text-muted-foreground">סך הכנסות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-red-600">₪ 1.28M</div>
-                    <div className="text-xs text-gray-600">סך הוצאות</div>
+                    <div className="text-xs text-muted-foreground">סך הוצאות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-blue-600">₪ +190K</div>
-                    <div className="text-xs text-gray-600">תזרים נטו</div>
+                    <div className="text-xs text-muted-foreground">תזרים נטו</div>
                   </div>
                 </div>
 
@@ -60,62 +60,62 @@ export default function DashboardPage() {
                   </div>
                 </div>
                 
-                {/* 7-day chart */}
-                <div className="h-48 bg-gray-50 p-4 rounded">
+                            {/* 7-day chart */}
+            <div className="h-48 bg-muted p-4 rounded">
                   <div className="h-full flex items-end justify-between gap-1">
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">+130K</div>
+                      <div className="text-xs text-foreground mb-1">+130K</div>
                       <div className="w-full bg-green-500 rounded-t h-20"></div>
-                      <div className="text-xs text-gray-600 mt-1">א'</div>
+                      <div className="text-xs text-muted-foreground mt-1">א'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">-130K</div>
+                      <div className="text-xs text-foreground mb-1">-130K</div>
                       <div className="w-full bg-red-500 rounded-t h-16"></div>
-                      <div className="text-xs text-gray-600 mt-1">ב'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ב'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">+330K</div>
+                      <div className="text-xs text-foreground mb-1">+330K</div>
                       <div className="w-full bg-green-500 rounded-t h-32"></div>
-                      <div className="text-xs text-gray-600 mt-1">ג'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ג'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">-200K</div>
+                      <div className="text-xs text-foreground mb-1">-200K</div>
                       <div className="w-full bg-red-500 rounded-t h-24"></div>
-                      <div className="text-xs text-gray-600 mt-1">ד'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ד'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">+530K</div>
+                      <div className="text-xs text-foreground mb-1">+530K</div>
                       <div className="w-full bg-green-500 rounded-t h-40"></div>
-                      <div className="text-xs text-gray-600 mt-1">ה'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ה'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">-160K</div>
+                      <div className="text-xs text-foreground mb-1">-160K</div>
                       <div className="w-full bg-red-500 rounded-t h-18"></div>
-                      <div className="text-xs text-gray-600 mt-1">ו'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ו'</div>
                     </div>
                     <div className="flex flex-col items-center flex-1">
-                      <div className="text-xs text-gray-700 mb-1">-30K</div>
+                      <div className="text-xs text-foreground mb-1">-30K</div>
                       <div className="w-full bg-red-500 rounded-t h-12"></div>
-                      <div className="text-xs text-gray-600 mt-1">ש'</div>
+                      <div className="text-xs text-muted-foreground mt-1">ש'</div>
                     </div>
                   </div>
                 </div>
               </TabsContent>
               
               <TabsContent value="30" className="space-y-4">
-                {/* Summary numbers for 30 days */}
-                <div className="grid grid-cols-3 gap-4 p-3 bg-gray-50 rounded">
+                              {/* Summary numbers for 30 days */}
+              <div className="grid grid-cols-3 gap-4 p-3 bg-muted rounded">
                   <div className="text-center">
                     <div className="text-lg font-bold text-green-600">₪ 6.2M</div>
-                    <div className="text-xs text-gray-600">סך הכנסות</div>
+                    <div className="text-xs text-muted-foreground">סך הכנסות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-red-600">₪ 5.8M</div>
-                    <div className="text-xs text-gray-600">סך הוצאות</div>
+                    <div className="text-xs text-muted-foreground">סך הוצאות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-blue-600">₪ +400K</div>
-                    <div className="text-xs text-gray-600">תזרים נטו</div>
+                    <div className="text-xs text-muted-foreground">תזרים נטו</div>
                   </div>
                 </div>
 
@@ -146,16 +146,16 @@ export default function DashboardPage() {
                       
                       return (
                         <div key={i} className="flex flex-col items-center flex-1">
-                          <div className="text-xs text-gray-700 mb-1">
-                            {item.net > 0 ? '+' : ''}{item.net}K
-                          </div>
+                                                  <div className="text-xs text-foreground mb-1">
+                          {item.net > 0 ? '+' : ''}{item.net}K
+                        </div>
                           <div className={`w-full ${item.color === 'green' ? 'bg-green-500' : 'bg-red-500'} rounded-t ${heightClass}`}></div>
-                          <div className="text-xs text-gray-600 mt-1">{item.week}</div>
+                          <div className="text-xs text-muted-foreground mt-1">{item.week}</div>
                         </div>
                       );
                     })}
                   </div>
-                  <div className="text-xs text-gray-500 text-center mt-2">
+                  <div className="text-xs text-muted-foreground/70 text-center mt-2">
                     תצוגה שבועית - 30 יום
                   </div>
                 </div>
@@ -178,18 +178,18 @@ export default function DashboardPage() {
               
               <TabsContent value="monthly" className="space-y-4">
                 {/* Summary numbers */}
-                <div className="grid grid-cols-3 gap-4 p-3 bg-gray-50 rounded">
+                <div className="grid grid-cols-3 gap-4 p-3 bg-muted rounded">
                   <div className="text-center">
                     <div className="text-lg font-bold text-blue-600">230</div>
-                    <div className="text-xs text-gray-600">סך יחידות</div>
+                    <div className="text-xs text-muted-foreground">סך יחידות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-purple-600">₪ 368M</div>
-                    <div className="text-xs text-gray-600">סך הכנסות</div>
+                    <div className="text-xs text-muted-foreground">סך הכנסות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-green-600">₪ 1.6M</div>
-                    <div className="text-xs text-gray-600">ממוצע ליחידה</div>
+                    <div className="text-xs text-muted-foreground">ממוצע ליחידה</div>
                   </div>
                 </div>
 
@@ -206,7 +206,7 @@ export default function DashboardPage() {
                 </div>
                 
                 {/* Monthly chart */}
-                <div className="h-48 bg-gray-50 p-4 rounded">
+                <div className="h-48 bg-muted p-4 rounded">
                   <div className="h-full flex items-end justify-between gap-1">
                     {[
                       { month: "ינו", units: 12, revenue: 18.5 },
@@ -230,10 +230,10 @@ export default function DashboardPage() {
                       
                       return (
                         <div key={i} className="flex flex-col items-center flex-1">
-                          <div className="text-xs text-gray-700 mb-1">₪{item.revenue}M</div>
+                          <div className="text-xs text-foreground mb-1">₪{item.revenue}M</div>
                           <div className={`w-full bg-blue-500 rounded-t ${heightClass}`}></div>
-                          <div className="text-xs text-gray-600 mt-1 font-medium">{item.month}</div>
-                          <div className="text-xs text-gray-500">{item.units}</div>
+                          <div className="text-xs text-muted-foreground mt-1 font-medium">{item.month}</div>
+                          <div className="text-xs text-muted-foreground/70">{item.units}</div>
                         </div>
                       );
                     })}
@@ -243,18 +243,18 @@ export default function DashboardPage() {
               
               <TabsContent value="quarterly" className="space-y-4">
                 {/* Summary numbers for quarterly */}
-                <div className="grid grid-cols-3 gap-4 p-3 bg-gray-50 rounded">
+                <div className="grid grid-cols-3 gap-4 p-3 bg-muted rounded">
                   <div className="text-center">
                     <div className="text-lg font-bold text-blue-600">230</div>
-                    <div className="text-xs text-gray-600">סך יחידות</div>
+                    <div className="text-xs text-muted-foreground">סך יחידות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-purple-600">₪ 368M</div>
-                    <div className="text-xs text-gray-600">סך הכנסות</div>
+                    <div className="text-xs text-muted-foreground">סך הכנסות</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-green-600">₪ 1.6M</div>
-                    <div className="text-xs text-gray-600">ממוצע ליחידה</div>
+                    <div className="text-xs text-muted-foreground">ממוצע ליחידה</div>
                   </div>
                 </div>
 
@@ -271,7 +271,7 @@ export default function DashboardPage() {
                 </div>
                 
                 {/* Quarterly chart */}
-                <div className="h-48 bg-gray-50 p-4 rounded">
+                <div className="h-48 bg-muted p-4 rounded">
                   <div className="h-full flex items-end justify-between gap-1">
                     {[
                       { quarter: "רבעון 1", units: 35, revenue: 55.5 },
@@ -285,10 +285,10 @@ export default function DashboardPage() {
                       
                       return (
                         <div key={i} className="flex flex-col items-center flex-1">
-                          <div className="text-xs text-gray-700 mb-1">₪{item.revenue}M</div>
+                          <div className="text-xs text-foreground mb-1">₪{item.revenue}M</div>
                           <div className={`w-full bg-blue-500 rounded-t ${heightClass}`}></div>
-                          <div className="text-xs text-gray-600 mt-1 font-medium">{item.quarter}</div>
-                          <div className="text-xs text-gray-500">{item.units}</div>
+                          <div className="text-xs text-muted-foreground mt-1 font-medium">{item.quarter}</div>
+                          <div className="text-xs text-muted-foreground/70">{item.units}</div>
                         </div>
                       );
                     })}
@@ -316,7 +316,7 @@ export default function DashboardPage() {
                 { id: 4, type: "בקשת תשלום", vendor: "גרניט ושיש הגליל", amount: "₪ 67,300", date: "26/11/2024", priority: "גבוה" },
                 { id: 5, type: "אישור עבודה נוספת", vendor: "בטון מזוין צפון", amount: "₪ 89,200", date: "25/11/2024", priority: "בינוני" }
               ].map((item) => (
-                <div key={item.id} className="flex items-center gap-3 rounded-md border p-3 bg-white" dir="rtl">
+                <div key={item.id} className="flex items-center gap-3 rounded-md border p-3 bg-card-bg border-card-border" dir="rtl">
                   <div className="flex items-center gap-2">
                     <Button size="sm" variant="ghost">
                       דחה
@@ -327,8 +327,8 @@ export default function DashboardPage() {
                   </div>
                   <div className="flex-1 text-right">
                     <div className="text-sm font-medium">{item.type}</div>
-                    <div className="text-xs text-black/60">{item.vendor} • {item.amount}</div>
-                    <div className="text-xs text-black/40">{item.date}</div>
+                    <div className="text-xs text-muted-foreground">{item.vendor} • {item.amount}</div>
+                    <div className="text-xs text-muted-foreground/70">{item.date}</div>
                   </div>
                   <div className={`h-3 w-3 rounded-full ${
                     item.priority === "גבוה" ? "bg-red-500" : 
@@ -359,12 +359,12 @@ export default function DashboardPage() {
                     activity.type === "payment" ? "bg-green-500" :
                     activity.type === "project" ? "bg-blue-500" :
                     activity.type === "contract" ? "bg-purple-500" :
-                    activity.type === "approval" ? "bg-yellow-500" : "bg-gray-500"
+                    activity.type === "approval" ? "bg-yellow-500" : "bg-muted-foreground"
                   }`} />
                   <div className="flex-1 text-right">
                     <div className="text-sm font-medium">{activity.action}</div>
-                    <div className="text-xs text-black/60">{activity.details}</div>
-                    <div className="text-xs text-black/40">{activity.time}</div>
+                    <div className="text-xs text-muted-foreground">{activity.details}</div>
+                    <div className="text-xs text-muted-foreground/70">{activity.time}</div>
                   </div>
                 </div>
               ))}
@@ -388,9 +388,9 @@ export default function DashboardPage() {
                 <div key={i} className="space-y-2" dir="rtl">
                   <div className="flex justify-between items-center text-sm">
                     <span className="font-medium">{project.name}</span>
-                    <span className="text-black/60">{project.completion}%</span>
+                    <span className="text-muted-foreground">{project.completion}%</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-muted rounded-full h-2">
                     <div 
                       className={`h-2 rounded-full ${
                         project.completion === 100 ? "bg-green-500" :
@@ -399,7 +399,7 @@ export default function DashboardPage() {
                       style={{ width: `${project.completion}%` }}
                     />
                   </div>
-                  <div className="flex justify-between text-xs text-black/60">
+                  <div className="flex justify-between text-xs text-muted-foreground">
                     <span>{project.budget}</span>
                     <span className={`${
                       project.status === "הושלם" ? "text-green-600" :

@@ -92,9 +92,9 @@ export function Sidebar({ className }: { className?: string }) {
     });
   }
   return (
-    <aside className={cn("h-full overflow-y-auto border-l border-black/10 bg-background/80 backdrop-blur transition-all duration-200 sidebar-scroll", open ? "w-72" : "w-14", className)}
-           aria-label="ניווט צדדי" dir="rtl">
-      <div className="h-14 flex items-center justify-between px-2 border-b border-black/5">
+                    <aside className={cn("h-full overflow-y-auto border-l border-card-border bg-background/80 backdrop-blur transition-all duration-200 sidebar-scroll", open ? "w-72" : "w-14", className)}
+                       aria-label="ניווט צדדי" dir="rtl">
+                  <div className="h-14 flex items-center justify-between px-2 border-b border-card-border">
         <button className="h-8 w-8 inline-grid place-items-center rounded-md hover:bg-black/5" onClick={() => setOpen((s) => !s)} aria-label="כווץ">
           <ChevronRight className={cn("h-4 w-4 transition-transform", open ? "rotate-180" : "rotate-0")} />
         </button>
@@ -107,13 +107,13 @@ export function Sidebar({ className }: { className?: string }) {
            role="navigation" aria-label="ראשי">
         {groups.map((g) => (
           <div key={g.id}>
-            <button
-              type="button"
-              onClick={() => toggleGroup(g.id)}
-              className={cn("w-full px-2 text-xs text-black/50 flex items-center justify-start gap-2 hover:text-black/70 text-right", !open && "sr-only")}
-              aria-expanded={openGroups.has(g.id)}
-              aria-controls={`group-${g.id}`}
-            >
+                                    <button
+                          type="button"
+                          onClick={() => toggleGroup(g.id)}
+                          className={cn("w-full px-2 text-xs text-muted-foreground flex items-center justify-start gap-2 hover:text-foreground text-right", !open && "sr-only")}
+                          aria-expanded={openGroups.has(g.id)}
+                          aria-controls={`group-${g.id}`}
+                        >
               {g.title}
               <ChevronRight className={cn("h-3.5 w-3.5 transition-transform", openGroups.has(g.id) ? "rotate-90" : "rotate-180")} />
             </button>

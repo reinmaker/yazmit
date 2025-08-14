@@ -122,10 +122,10 @@ function renderStarRating(rating: number) {
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          className={`h-3 w-3 ${i < Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
+          className={`h-3 w-3 ${i < Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : "text-muted-foreground/50"}`}
         />
       ))}
-      <span className="text-xs text-gray-600 mr-1">{rating}</span>
+              <span className="text-xs text-muted-foreground mr-1">{rating}</span>
     </div>
   );
 }
@@ -154,7 +154,7 @@ export default function VendorsPage() {
             <div className="flex items-center gap-3">
               <Users className="h-8 w-8 text-blue-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">סך ספקים</p>
+                <p className="text-sm text-muted-foreground">סך ספקים</p>
                 <p className="text-2xl font-bold">{vendors.length}</p>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function VendorsPage() {
             <div className="flex items-center gap-3">
               <TrendingUp className="h-8 w-8 text-green-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">ספקים פעילים</p>
+                <p className="text-sm text-muted-foreground">ספקים פעילים</p>
                 <p className="text-2xl font-bold">{activeVendors}</p>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function VendorsPage() {
             <div className="flex items-center gap-3">
               <DollarSign className="h-8 w-8 text-yellow-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">סך חוזים</p>
+                <p className="text-sm text-muted-foreground">סך חוזים</p>
                 <p className="text-2xl font-bold">₪ {(totalContracts / 1000000).toFixed(0)}M</p>
               </div>
             </div>
@@ -190,7 +190,7 @@ export default function VendorsPage() {
             <div className="flex items-center gap-3">
               <Star className="h-8 w-8 text-purple-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">דירוג ממוצע</p>
+                <p className="text-sm text-muted-foreground">דירוג ממוצע</p>
                 <p className="text-2xl font-bold">{averageRating.toFixed(1)}</p>
               </div>
             </div>
@@ -232,7 +232,7 @@ export default function VendorsPage() {
                   <TableCell>
                     <div>
                       <div className="font-medium">{vendor.contact}</div>
-                      <div className="flex items-center gap-1 text-xs text-gray-500">
+                      <div className="flex items-center gap-1 text-xs text-muted-foreground">
                         <Mail className="h-3 w-3" />
                         {vendor.email}
                       </div>
@@ -240,13 +240,13 @@ export default function VendorsPage() {
                   </TableCell>
                   <TableCell>
                     <div className="flex items-center gap-1">
-                      <Phone className="h-3 w-3 text-gray-400" />
+                                              <Phone className="h-3 w-3 text-muted-foreground" />
                       {vendor.phone}
                     </div>
                   </TableCell>
                   <TableCell>
                     <div className="flex items-center gap-1">
-                      <MapPin className="h-3 w-3 text-gray-400" />
+                                              <MapPin className="h-3 w-3 text-muted-foreground" />
                       {vendor.location}
                     </div>
                   </TableCell>

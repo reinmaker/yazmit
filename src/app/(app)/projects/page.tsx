@@ -98,7 +98,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-3">
               <Building2 className="h-8 w-8 text-blue-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">סך פרויקטים</p>
+                <p className="text-sm text-muted-foreground">סך פרויקטים</p>
                 <p className="text-2xl font-bold">{projects.length}</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-3">
               <Calendar className="h-8 w-8 text-green-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">פרויקטים פעילים</p>
+                <p className="text-sm text-muted-foreground">פרויקטים פעילים</p>
                 <p className="text-2xl font-bold">{projects.filter(p => p.status === "בביצוע").length}</p>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-3">
               <DollarSign className="h-8 w-8 text-yellow-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">סך תקציב</p>
+                <p className="text-sm text-muted-foreground">סך תקציב</p>
                 <p className="text-2xl font-bold">₪ 230M</p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function ProjectsPage() {
             <div className="flex items-center gap-3">
               <Building2 className="h-8 w-8 text-purple-600" />
               <div className="text-right">
-                <p className="text-sm text-gray-600">יחידות נמכרו</p>
+                <p className="text-sm text-muted-foreground">יחידות נמכרו</p>
                 <p className="text-2xl font-bold">{projects.reduce((sum, p) => sum + p.sold, 0)}</p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function ProjectsPage() {
                   <TableCell className="font-medium">{project.name}</TableCell>
                   <TableCell>
                     <div className="flex items-center gap-1">
-                      <MapPin className="h-3 w-3 text-gray-400" />
+                      <MapPin className="h-3 w-3 text-muted-foreground" />
                       {project.location}
                     </div>
                   </TableCell>
@@ -197,7 +197,7 @@ export default function ProjectsPage() {
                   <TableCell>{project.units}</TableCell>
                   <TableCell>
                     <span className="font-medium">{project.sold}</span>
-                    <span className="text-gray-500 text-sm">/{project.units}</span>
+                    <span className="text-muted-foreground text-sm">/{project.units}</span>
                   </TableCell>
                   <TableCell>
                     <div className="flex gap-1">

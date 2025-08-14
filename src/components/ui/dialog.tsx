@@ -29,10 +29,10 @@ export const DialogContent = React.forwardRef<
     <DialogOverlay />
     <DialogPrimitive.Content
       ref={ref}
-      className={cn(
-        "fixed z-50 grid w-[90vw] max-w-lg gap-4 border bg-white p-6 shadow-lg top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-lg",
-        className
-      )}
+              className={cn(
+          "fixed z-50 grid w-[90vw] max-w-lg gap-4 border bg-card-bg border-card-border p-6 shadow-lg top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-lg",
+          className
+        )}
       {...props}
     >
       {children}
@@ -52,7 +52,7 @@ export const DialogTitle = ({ className, ...props }: React.HTMLAttributes<HTMLHe
   <h2 className={cn("text-lg font-semibold", className)} {...props} />
 );
 export const DialogDescription = ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
-  <p className={cn("text-sm text-black/70", className)} {...props} />
+  <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 
 

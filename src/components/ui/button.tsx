@@ -11,7 +11,7 @@ const buttonVariants = cva(
         default: "bg-[#1E88E5] text-white hover:opacity-95", // Primary
         secondary: "hover:bg-black/5", // Ghost secondary
         danger: "bg-[#D32F2F] text-white hover:opacity-95",
-        outline: "border border-black/10 bg-transparent hover:bg-black/5",
+        outline: "border border-card-border bg-transparent hover:bg-muted",
         ghost: "hover:bg-black/5",
       },
       size: {

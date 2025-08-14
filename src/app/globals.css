@@ -7,6 +7,12 @@
   --success: #2E7D32;
   --warning: #ED6C02;
   --danger: #D32F2F;
+  
+  /* Light mode specific colors */
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.1);
+  --muted: #f8f9fa;
+  --muted-foreground: #6c757d;
 }
 
 @theme inline {
@@ -16,11 +22,54 @@
   --font-mono: var(--font-rubik);
 }
 
+/* Dark mode support - System preference */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --card-bg: #1a1a1a;
+    --card-border: rgba(255, 255, 255, 0.1);
+    --muted: #262626;
+    --muted-foreground: #a1a1aa;
   }
+}
+
+/* Manual dark mode override */
+[data-theme="dark"],
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card-bg: #1a1a1a;
+  --card-border: rgba(255, 255, 255, 0.1);
+  --muted: #262626;
+  --muted-foreground: #a1a1aa;
+}
+
+/* Manual light mode override */
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #0b0f14;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.1);
+  --muted: #f8f9fa;
+  --muted-foreground: #6c757d;
+}
+
+/* Ensure all components use CSS variables */
+.card-bg {
+  background-color: var(--card-bg);
+}
+
+.border-card-border {
+  border-color: var(--card-border);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.bg-muted {
+  background-color: var(--muted);
 }
 
 html {
@@ -32,10 +81,11 @@ html {
 }
 
 body {
-  background: #F7F9FC;
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-heebo);
   direction: rtl;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3 {
