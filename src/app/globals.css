@@ -2,14 +2,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0b0f14;
+  --primary: #1E88E5;
+  --success: #2E7D32;
+  --warning: #ED6C02;
+  --danger: #D32F2F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-heebo);
+  --font-mono: var(--font-rubik);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +23,94 @@
   }
 }
 
+html {
+  direction: rtl;
+}
+
+[dir="rtl"] .ltr-only {
+  display: none;
+}
+
 body {
-  background: var(--background);
+  background: #F7F9FC;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-heebo);
+  direction: rtl;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-rubik);
+  text-align: right;
+}
+
+/* RTL-specific utilities */
+* {
+  direction: inherit;
+}
+
+/* Input and form elements RTL */
+input, textarea, select {
+  text-align: right;
+  direction: rtl;
+}
+
+input::placeholder, textarea::placeholder {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Button text alignment */
+button {
+  direction: rtl;
+}
+
+/* Flex containers default to RTL behavior */
+.flex {
+  direction: rtl;
+}
+
+/* Grid containers RTL */
+.grid {
+  direction: rtl;
+}
+
+/* Table styles for sticky header, zebra, hover */
+.table-sticky-header thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  z-index: 10;
+  text-align: right;
+}
+
+table {
+  direction: rtl;
+}
+
+th, td {
+  text-align: right;
+}
+
+.table-zebra tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Force scrollbar on the left for main content area */
+.main-content-scroll {
+  direction: rtl;
+}
+.main-content-scroll > * {
+  direction: ltr;
+}
+
+/* Force scrollbar on the right for sidebar */
+.sidebar-scroll {
+  direction: ltr;
+}
+.sidebar-scroll > * {
+  direction: rtl;
 }
